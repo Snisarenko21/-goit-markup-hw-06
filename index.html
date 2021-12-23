@@ -390,10 +390,10 @@
     </ul>
 </div>
 <div class="subscribe">
-    <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
-    <form action class="subscribe-form">
-        <input type="email" class="subscribe-form_email" placeholder="E-mail">
-        <button type="submit" class="subscribe-form_button">Подписаться<svg class="subscribe-form_icon" width="24" height="24">
+    <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+    <form class="subscribe-form">
+        <input type="email" class="subscribe-email" name="email" placeholder="E-mail">
+        <button type="submit" class="subscribe-button">Подписаться<svg class="subscribe-icon" width="24" height="24">
             <use href="./images/form-icons.svg#icon-icon-send"></use>
         </svg>
        </button>
@@ -410,18 +410,18 @@
     <use href="./images/icons.svg#icon-close"></use>
 </svg>
 </button>
-<form action class="form-modals">
+<form class="form-modals">
     <h1 class="form-title">Оставьте свои данные, мы вам перезвоним</h1>
     <label class="form-field">
     <span class="field-label">Имя</span>
-    <input type="text" class="field-input" name="name" pattern="^[a-zA-Z]+\s[a-zA-Z]+$" title="Данное поле должно содержать 2 слова">
+    <input type="text" class="field-input" name="name" pattern="^[a-zA-Z]+\s[a-zA-Z]+$" title="Данное поле должно содержать 2 слова" required />
     <svg class="field-icon" width="18" height="18">
         <use href="./images/form-icons.svg#icon-person-black"></use>
     </svg>
 </label>
 <label class="form-field">
     <span class="field-label">Телефон</span>
-    <input type="tel" class="field-input" name="tel" pattern="[0-9]{10}" title="Необходимый формат 000-000-00-00">
+    <input type="tel" class="field-input" name="tel" pattern="[0-9]{10}" title="Необходимый формат 000-000-00-00" required />
     <svg class="field-icon" width="18" height="18">
         <use href="./images/form-icons.svg#icon-phone-black"></use>
     </svg>
@@ -435,10 +435,10 @@
 </label>
 <label class="form-field">
     <span class="field-label">Комментарий</span>
-    <textarea class="field-comment" name="comment" id="comment" rows="8" placeholder="Введите текст"></textarea>
+    <textarea class="field-comment" name="comment" placeholder="Введите текст"></textarea>
 </label>
 <label class="checkbox-label">
-    <input class="checkbox-input" type="checkbox" name="policy" value="agree" required=" ">
+    <input class="checkbox-input" type="checkbox" name="policy" value="agree" required />
     <span class="checkbox-icon"></span>
     <span class="checkbox-policy">Соглашаюсь с рассылкой и принимаю <a href="#" class="checkbox-policy-label">Условия договора</a></span>
 </label>
