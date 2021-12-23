@@ -557,7 +557,7 @@ footer .container {
   margin-left: 85px;
 }
 .follow-title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -596,6 +596,7 @@ footer .container {
 /* Подписаться */
 
 .subscribe-title {
+  font-weight: 700;
   margin-bottom: 20px;
   font-size: 14px;
   line-height: 1.14;
@@ -706,7 +707,10 @@ footer .container {
   cursor: pointer;
   background-color: var(--primary-white-color);
   border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(33, 33, 33, 0.2);
+}
+.close:hover {
+  fill: var(--accent-color);
 }
 
 /* Форма своих данных */
@@ -716,11 +720,7 @@ footer .container {
   width: 448px;
   top: 40px;
   left: 40px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
   margin-top: 12px;
-  /* margin-bottom: 20px; */
 }
 .form-title {
   margin-bottom: 10px;
@@ -730,14 +730,13 @@ footer .container {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-}
-.form-box {
-  position: relative;
-  display: flex;
-  flex-direction: column;
   margin-bottom: 12px;
 }
 .form-box {
+  position: relative;
+  display: block;
+  align-items: center;
+  margin-top: 10px;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
@@ -749,16 +748,15 @@ footer .container {
   width: 448px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
-  box-sizing: border-box;
   border-radius: 4px;
   padding-left: 42px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-icon {
   position: absolute;
+  display: block;
   top: 50%;
   left: 12px;
-
   fill: var(--title-text-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -843,9 +841,11 @@ footer .container {
   fill: var(--accent-color);
   border-color: var(--accent-color);
 }
-.form-box:focus-within .form-icon {
+
+.form-input:focus + .form-icon {
   fill: var(--accent-color);
 }
+
 .submit-button {
   font-weight: 700;
   font-size: 16px;
@@ -866,6 +866,8 @@ footer .container {
   width: 200px;
   height: 50px;
   box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+  display: block;
+  margin: 0 auto;
 }
 .submit-button:focus,
 .submit-button:hover {

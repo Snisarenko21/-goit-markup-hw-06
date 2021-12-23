@@ -404,6 +404,7 @@
 </footer>
 
 <!-- Модальное окно -->
+
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
    <button class="close" data-modal-close><svg class="close-icon" width="11" height="11">
@@ -413,34 +414,34 @@
 <form class="form-modals">
     <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
     <label class="form-box">
-    <span class="form-label">Имя</span>
-    <input type="text" class="form-input" name="name" pattern="^[a-zA-Z]+\s[a-zA-Z]+$" title="Данное поле должно содержать 2 слова" required />
+    Имя
+    <input type="text" class="form-input" name="name" />
     <svg class="form-icon" width="18" height="18">
         <use href="./images/form-icons.svg#icon-person-black"></use>
     </svg>
 </label>
 <label class="form-box">
-    <span class="form-label">Телефон</span>
-    <input type="tel" class="form-input" name="tel" pattern="[0-9]{10}" title="Необходимый формат 000-000-00-00" required />
+    Телефон
+    <input type="tel" class="form-input" name="tel" />  
     <svg class="form-icon" width="18" height="18">
         <use href="./images/form-icons.svg#icon-phone-black"></use>
     </svg>
 </label>
 <label class="form-box">
-    <span class="form-label">Почта</span>
+    Почта
     <input type="email" class="form-input" name="email">
     <svg class="form-icon" width="18" height="18">
         <use href="./images/form-icons.svg#icon-email-black"></use>
     </svg>
 </label>
 <label class="form-box">
-    <span class="form-label">Комментарий</span>
+    Комментарий
     <textarea class="form-comment" name="comment" placeholder="Введите текст"></textarea>
 </label>
 <label class="checkbox-label">
-    <input class="checkbox-input" type="checkbox" name="policy" value="agree" required />
+    <input class="checkbox-input" type="checkbox" name="policy" />
     <span class="checkbox-icon"></span>
-    <span class="checkbox-policy">Соглашаюсь с рассылкой и принимаю<a href="#" class="checkbox-policy-label">Условия договора</a></span>
+    <span class="checkbox-policy">Соглашаюсь с рассылкой и принимаю<a href="#" class="checkbox-policy-label"> Условия договора</a></span>
 </label>
 
 <button type="submit" class="submit-button">Отправить</button>
