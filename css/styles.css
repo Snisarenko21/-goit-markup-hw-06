@@ -719,6 +719,8 @@ footer .container {
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-top: 12px;
+  /* margin-bottom: 20px; */
 }
 .form-title {
   margin-bottom: 10px;
@@ -729,13 +731,13 @@ footer .container {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
-.form-field {
+.form-box {
   position: relative;
   display: flex;
   flex-direction: column;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
-.form-field {
+.form-box {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
@@ -743,7 +745,7 @@ footer .container {
   color: var(--primary-text-color);
   margin-bottom: 4px;
 }
-.field-input {
+.form-input {
   width: 448px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -752,7 +754,7 @@ footer .container {
   padding-left: 42px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.field-icon {
+.form-icon {
   position: absolute;
   top: 50%;
   left: 12px;
@@ -760,7 +762,7 @@ footer .container {
   fill: var(--title-text-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.field-comment {
+.form-comment {
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
@@ -776,7 +778,7 @@ footer .container {
   padding: 12px 16px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.field-comment::placeholder {
+.form-comment::placeholder {
   color: rgba(117, 117, 117, 0, 5);
 }
 .checkbox-label {
@@ -828,20 +830,20 @@ footer .container {
 .checkbox-input:focus-within .checkbox-icon {
   background-color: var(--accent-color);
 }
-.form-field:hover .field-input,
-.form-field:hover .field-comment {
+.form-box:hover .form-input,
+.form-box:hover .form-comment {
   border-color: var(--accent-color);
 }
-.field-icon:hover,
-.field-icon:focus {
+.form-icon:hover,
+.form-icon:focus {
   fill: var(--accent-color);
 }
-.form-field:hover svg,
-.form-field:focus svg {
+.form-box:hover svg,
+.form-box:focus svg {
   fill: var(--accent-color);
   border-color: var(--accent-color);
 }
-.form-field:focus-within .field-icon {
+.form-box:focus-within .form-icon {
   fill: var(--accent-color);
 }
 .submit-button {
