@@ -551,7 +551,6 @@ footer .container {
   display: flex;
   justify-content: flex-start;
   align-items: baseline;
-  /* justify-content: space-between; */
 }
 .follow {
   margin-left: 70px;
