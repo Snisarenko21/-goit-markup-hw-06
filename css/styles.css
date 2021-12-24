@@ -551,10 +551,10 @@ footer .container {
   display: flex;
   justify-content: flex-start;
   align-items: baseline;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 .follow {
-  margin-left: 85px;
+  margin-left: 70px;
 }
 .follow-title {
   font-weight: 700;
@@ -603,6 +603,9 @@ footer .container {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-white-color);
+}
+.subscribe {
+  margin-left: auto;
 }
 .subscribe-form {
   display: flex;
@@ -687,7 +690,6 @@ footer .container {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   width: 528px;
-  height: 581px;
   padding: 40px;
   background-color: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
